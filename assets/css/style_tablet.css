@@ -1,0 +1,214 @@
+@media only screen and (min-width: 768px) {
+
+    body {
+        background-color: green;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+general__styling__bg__img
+
+
+
+
+
+
+
+
+
+
+
+.examples img {
+    /* width: 100%; */
+    height: 12.5rem;
+    object-fit: cover;
+    /* margin-top: 3.13rem; */
+}
+
+.examples h2 {
+    font-family: 'Alegreya-Sans-Medium';
+    font-size: 1.88rem;
+    color: var(--font-color-green);
+    font-weight: 100;
+    /* margin: 1.25rem 0; */
+}
+
+.date {
+    font-style: italic;
+}
+
+.examples article a {
+    color: var(--small-button-color);
+}
+
+
+
+
+
+
+/* Section 6: Free quotes with background image, a description and a free quote button */
+
+.free__qoute {
+    display: flex;
+    align-items: center;
+    /* width: 100%; */
+    /* background-image: url('../img/6f4d0914c7b5ddb743f600df2edc50bf.png'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+.free__qoute__bg {
+    /* padding: 1.37rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.13rem;
+}
+
+.free__qoute__bg p {
+    color: var(--white-color);
+    font-size: 2.25rem;
+    font-family: 'Alegreya-Sans-Medium';
+}
+
+.free__qoute__bg button {
+    /* padding: 0.63rem 0.94rem; */
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+/* Section 7: Testimonials with flex */
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 100%; */
+    /* margin: 2rem 0; */
+    gap: 2.19rem;
+}
+
+.testimonials h2 {
+    /* margin-bottom: -1.25rem; */
+    font-family: 'Alegreya-Sans-Medium';
+    font-size: 2.25rem;
+    color: var(--font-color-green);
+}
+
+.testimonials__comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* margin: 0 3rem; */
+    gap: 0.63rem;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 0.88rem;
+    /* margin-bottom: 0; */
+}
+
+/* Contact Form with name and email required, a textarea and a submit button*/
+
+form {
+    /* padding-bottom: 2.5rem; */
+}
+
+.contact {
+    /* background-image: url('../img/contact.png'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    /* width: 100%; */
+}
+
+.contact h2, .contact p {
+    color: var(--white-color);
+}
+
+.contact__name__mail, .contact__text {
+    /* width: 80%; */
+    /* margin-top: 1.25rem; */
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    border-radius: 0.3rem;
+}
+
+.contact__name__mail {
+    height: 2.13rem;
+}
+
+.contact__text {
+    height: 3.38rem;
+}
+
+::placeholder {
+    color: var(--white-color);
+    /* padding-left: 0.63rem; */
+    font-family: Helvetica, sans-serif;
+    font-size: 0.88rem;
+}
+
+textarea::placeholder {
+    /* padding-top: 0.3rem; */
+}
+
+.input__button {
+    /* margin-top: 1.25rem; */
+    /* padding: 0.63rem 0.94rem; */
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.88rem;
+}
+
+/* Footer with Backgroundcolor of var:footer */
+
+footer {
+    /* width: 100%; */
+    height: 160px;
+    background-color: var(--footer-background);
+}
+
+footer p {
+    color: var(--white-color);
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 0.88rem;
+    /* margin: 2.5rem 0 0 1.25rem; */
+    /* width: 35%; */
+}

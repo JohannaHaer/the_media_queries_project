@@ -29,14 +29,11 @@
     --footer-background: rgba(43, 62, 81, 1);
 }
 
-/* Min-Width at 320px */
-
 html {
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-width: 320px;
-}
+} 
 
 /* Styling of body with Flex */
 
@@ -44,22 +41,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 375px;
-}
-
-/* General Stylings of background image sections with flex */
-
-.general__styling__bg__img {
-    display: flex;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     width: 100%;
-    flex-shrink: 0;
 }
 
-/* Black transparent background on section (services, free__quote and contact */
+/* Black transparent background on section (services, free__quote and contact) */
 
 .black__transparent__bg {
     display: flex;
@@ -67,31 +52,38 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: max-content;
+    height: auto;
     background-color: rgba(128, 128, 128, 0.354);
-    padding: 5px 35px;
+    padding: 0.31rem 2rem;
     text-align: center;
-}
+} 
 
 /* Paragraphs with grey color */
 
 .paragraph__grey {
     font-family: Helvetica, sans-serif;
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 0.8rem;
+    line-height: 1rem;
     color: var(--font-color-gray);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 /* Styling Header with background image */
 
 header {
+    display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
     height: 447px;
-    padding: 20px 30px;
+    padding: 1.25rem 1.88rem;
     background-image: url('../img/0f6f55ffff18a259b1383b2fd9d785aa.png');
-    gap: 99px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    gap: 6.2rem;
 }
 
 /* Header with Flex and width: 100% of the body */
@@ -106,7 +98,7 @@ header {
 /* Styling of logo */
 
 .logo {
-    font-size: 30px;
+    font-size: 1.88rem;
     text-transform: uppercase;
     color: var(--white-color);
     font-family: 'Alegreya-Bold';
@@ -122,11 +114,11 @@ header {
 }
 
 .burger{
-    height: 2px;
-    width: 24px;
+    height: 0.13rem;
+    width: 1.5rem;
     background-color: var(--white-color);
-    margin: 2px;
-    border-radius: 5px;
+    margin: 0.13rem;
+    border-radius: 0.3rem;
 }
 
 /* Styling of Landingpage head with h1 and description p */
@@ -136,20 +128,19 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 20px;
-    width: 100%;
+    gap: 1.25rem;
     color: var(--white-color);
 }
 
 .landing-page h1 {
     font-family: 'Nixie-Regular';
-    font-size: 39px;
+    font-size: 2.44rem;
     font-weight: lighter;
 }
 
 .landing-page p {
     font-family: 'Alegreya-Regular';
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -162,6 +153,14 @@ main {
     width: 100%;
 }
 
+.padding__lr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1.25rem 1.88rem;
+}
+
 /* Section 1 and 4 with portfolio and button to view all */
 
 .portfolio {
@@ -169,34 +168,33 @@ main {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
-    margin: 20px 0 50px 0;
+    margin: 1.25rem 0 3.1rem 0;
+    position: relative;
 }
 
 .portfolio div h2 {
     font-family: 'Alegreya-Sans-Medium';
     color: var(--font-color-green);
-    font-size: 36px;
+    font-size: 1.9rem;
     font-weight: 100;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .portfolio div p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .portfolio a button {
     background-color: transparent;
-    padding: 10px 15px;
+    padding: 0.63rem 0.94rem;
     font-family: Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--button-color);
     border: 1px solid var(--button-color);
     cursor: pointer;
-}
-
-.portfolio a {
-    margin: -15px 0 0 -30px;
+    position: absolute;
+    right: 0;
+    bottom: 27%;
 }
 
 /* Section 2 with 6 images, each with a button in the center of the image  */
@@ -205,47 +203,60 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
     width: 100%;
-    padding: 0 15px;
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
 }
 
 .picture__section div {
     background-color: var(--image-color);
-    height: 205.5px;
+    height: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    position: relative;
 }
 
 .picture__section img {
     width: 100%;
+    height: auto;
     object-fit: cover;
     z-index: -1;
 }
 
 .picture__section button {
-    padding: 7px 10px;
+    padding: 0.44rem 0.63rem;
     background-color: transparent;
     border: 1px solid var(--white-color);
     color: var(--white-color);
-    margin-left: -220px;
     cursor: pointer;
+    position: absolute;
+    right: 35%;
+    bottom: 40%;
 }
 
 /* Service section (3) with background image and icons with description on top */
 
 .services {
+    width: 100%;
     background-image: url('../img/8d72e0af708f1d83a868ba81ee657811.png');
     height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white-color);
 }
 
-.services__background div {
+.services__headline {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--white-color);
+    margin-top: 1.25rem;
+    margin-bottom: 1.88rem;
 }
 
 .services__background div img {
@@ -253,33 +264,28 @@ main {
     height: 50px;
 }
 
-.services__headline {
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
 .services__headline h2, .contact h2 {
     font-family: 'Alegreya-Sans-Medium';
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 300;
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
 }
 
 .services__content {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .services__content h3 {
     font-family: 'Alegreya-Sans-Medium';
-    font-size: 30px;
+    font-size: 1.88rem;
     font-weight: 300;
-    margin-bottom: 5px;
+    margin-bottom: 0.3rem;
 }
 
 .services__content p, .contact p {
     font-family: Helvetica, sans-serif;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 0.75rem;
+    line-height: 0.94rem;
 }
 
 /* Section 5: examples with flex. Examples consisting of an image, h2, date, description and a link for more information */
@@ -288,23 +294,24 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 15px;
-    margin-bottom: 100px;
+    width: 100%;
+    padding: 0 0.94rem;
+    margin-bottom: 6.25rem;
 }
 
 .examples img {
     width: 100%;
-    height: 200px;
+    height: 12.5rem;
     object-fit: cover;
-    margin-top: 50px;
+    margin-top: 3.13rem;
 }
 
 .examples h2 {
     font-family: 'Alegreya-Sans-Medium';
-    font-size: 30px;
+    font-size: 1.88rem;
     color: var(--font-color-green);
     font-weight: 100;
-    margin: 20px 0;
+    margin: 1.25rem 0;
 }
 
 .date {
@@ -318,31 +325,37 @@ main {
 /* Section 6: Free quotes with background image, a description and a free quote button */
 
 .free__qoute {
+    display: flex;
+    align-items: center;
+    width: 100%;
     background-image: url('../img/6f4d0914c7b5ddb743f600df2edc50bf.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 700px;
 }
 
 .free__qoute__bg {
-    padding: 22px;
+    padding: 1.37rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 50px;
+    gap: 3.13rem;
 }
 
 .free__qoute__bg p {
     color: var(--white-color);
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: 'Alegreya-Sans-Medium';
 }
 
 .free__qoute__bg button {
-    padding: 10px 15px;
+    padding: 0.63rem 0.94rem;
     background-color: transparent;
     border: 1px solid var(--white-color);
     color: var(--white-color);
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 /* Section 7: Testimonials with flex */
@@ -351,14 +364,15 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px 40px 80px 40px;
-    gap: 35px;
+    width: 100%;
+    margin: 2rem 0;
+    gap: 2.19rem;
 }
 
 .testimonials h2 {
-    margin-bottom: -20px;
+    margin-bottom: -1.25rem;
     font-family: 'Alegreya-Sans-Medium';
-    font-size: 36px;
+    font-size: 2.25rem;
     color: var(--font-color-green);
 }
 
@@ -367,28 +381,33 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 10px;
+    margin: 0 3rem;
+    gap: 0.63rem;
 }
 
 .bold {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.88rem;
     margin-bottom: 0;
 }
 
 /* Contact Form with name and email required, a textarea and a submit button*/
 
 form {
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
 }
 
 .contact {
     background-image: url('../img/contact.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 450px;
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
+    width: 100%;
 }
 
 .contact h2, .contact p {
@@ -396,42 +415,42 @@ form {
 }
 
 .contact__name__mail, .contact__text {
-    width: 345px;
-    margin-top: 20px;
+    width: 80%;
+    margin-top: 1.25rem;
     background-color: transparent;
     border: 1px solid var(--white-color);
-    border-radius: 5px;
+    border-radius: 0.3rem;
 }
 
 .contact__name__mail {
-    height: 34px;
+    height: 2.13rem;
 }
 
 .contact__text {
-    height: 54px;
+    height: 3.38rem;
 }
 
 ::placeholder {
     color: var(--white-color);
-    padding-left: 10px;
+    padding-left: 0.63rem;
     font-family: Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 0.88rem;
 }
 
 textarea::placeholder {
-    padding-top: 5px;
+    padding-top: 0.3rem;
 }
 
 .input__button {
-    margin-top: 20px;
-    padding: 10px 15px;
+    margin-top: 1.25rem;
+    padding: 0.63rem 0.94rem;
     background-color: transparent;
     border: 1px solid var(--white-color);
     color: var(--white-color);
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 0.88rem;
 }
 
 /* Footer with Backgroundcolor of var:footer */
@@ -446,7 +465,7 @@ footer p {
     color: var(--white-color);
     font-family: Helvetica, sans-serif;
     font-weight: 100;
-    font-size: 14px;
-    margin: 40px 0 0 20px;
-    width: 150px;
+    font-size: 0.88rem;
+    margin: 2.5rem 0 0 1.25rem;
+    width: 35%;
 }
