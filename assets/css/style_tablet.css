@@ -1,47 +1,100 @@
 @media only screen and (min-width: 768px) {
 
-    body {
-        background-color: green;
-    }
+/* Section 2 with 6 images, each with a button in the center of the image  */
+
+.picture__section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 6.25rem;
 }
 
+.picture__section div {
+    background-color: transparent;
+    width: 30%;
+}
 
+.picture__section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
+.picture__section button {
+    visibility: hidden;
+}
 
+/* Service section (3) with background image and icons with description on top */
 
+.services {
+    width: 100%;
+    background-image: url('../img/8d72e0af708f1d83a868ba81ee657811.png');
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white-color);
+}
 
+.services__headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.88rem;
+}
 
+.services__background div img {
+    width: 50px;
+    height: 50px;
+}
 
+.services__headline h2, .contact h2 {
+    font-family: 'Alegreya-Sans-Medium';
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin-bottom: 0.25rem;
+}
 
+.services__content {
+    margin-bottom: 1.25rem;
+}
 
+.services__content h3 {
+    font-family: 'Alegreya-Sans-Medium';
+    font-size: 1.88rem;
+    font-weight: 300;
+    margin-bottom: 0.3rem;
+}
 
+.services__content p, .contact p {
+    font-family: Helvetica, sans-serif;
+    font-size: 0.75rem;
+    line-height: 0.94rem;
+}
 
+/* Section 5: examples with flex. Examples consisting of an image, h2, date, description and a link for more information */
 
-
-
-
-
-
-
-
-
-general__styling__bg__img
-
-
-
-
-
-
-
-
-
-
+.examples {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 0.94rem;
+    margin-bottom: 6.25rem;
+}
 
 .examples img {
-    /* width: 100%; */
+    width: 100%;
     height: 12.5rem;
     object-fit: cover;
-    /* margin-top: 3.13rem; */
+    margin-top: 3.13rem;
 }
 
 .examples h2 {
@@ -49,7 +102,7 @@ general__styling__bg__img
     font-size: 1.88rem;
     color: var(--font-color-green);
     font-weight: 100;
-    /* margin: 1.25rem 0; */
+    margin: 1.25rem 0;
 }
 
 .date {
@@ -60,18 +113,13 @@ general__styling__bg__img
     color: var(--small-button-color);
 }
 
-
-
-
-
-
 /* Section 6: Free quotes with background image, a description and a free quote button */
 
 .free__qoute {
     display: flex;
     align-items: center;
-    /* width: 100%; */
-    /* background-image: url('../img/6f4d0914c7b5ddb743f600df2edc50bf.png'); */
+    width: 100%;
+    background-image: url('../img/6f4d0914c7b5ddb743f600df2edc50bf.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -79,7 +127,7 @@ general__styling__bg__img
 }
 
 .free__qoute__bg {
-    /* padding: 1.37rem; */
+    padding: 1.37rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,7 +141,7 @@ general__styling__bg__img
 }
 
 .free__qoute__bg button {
-    /* padding: 0.63rem 0.94rem; */
+    padding: 0.63rem 0.94rem;
     background-color: transparent;
     border: 1px solid var(--white-color);
     color: var(--white-color);
@@ -107,13 +155,13 @@ general__styling__bg__img
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 100%; */
-    /* margin: 2rem 0; */
+    width: 100%;
+    margin: 2rem 0;
     gap: 2.19rem;
 }
 
 .testimonials h2 {
-    /* margin-bottom: -1.25rem; */
+    margin-bottom: -1.25rem;
     font-family: 'Alegreya-Sans-Medium';
     font-size: 2.25rem;
     color: var(--font-color-green);
@@ -124,24 +172,24 @@ general__styling__bg__img
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* margin: 0 3rem; */
+    margin: 0 3rem;
     gap: 0.63rem;
 }
 
 .bold {
     font-weight: bold;
     font-size: 0.88rem;
-    /* margin-bottom: 0; */
+    margin-bottom: 0;
 }
 
 /* Contact Form with name and email required, a textarea and a submit button*/
 
 form {
-    /* padding-bottom: 2.5rem; */
+    padding-bottom: 2.5rem;
 }
 
 .contact {
-    /* background-image: url('../img/contact.png'); */
+    background-image: url('../img/contact.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -150,7 +198,7 @@ form {
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    /* width: 100%; */
+    width: 100%;
 }
 
 .contact h2, .contact p {
@@ -158,8 +206,8 @@ form {
 }
 
 .contact__name__mail, .contact__text {
-    /* width: 80%; */
-    /* margin-top: 1.25rem; */
+    width: 80%;
+    margin-top: 1.25rem;
     background-color: transparent;
     border: 1px solid var(--white-color);
     border-radius: 0.3rem;
@@ -175,18 +223,18 @@ form {
 
 ::placeholder {
     color: var(--white-color);
-    /* padding-left: 0.63rem; */
+    padding-left: 0.63rem;
     font-family: Helvetica, sans-serif;
     font-size: 0.88rem;
 }
 
 textarea::placeholder {
-    /* padding-top: 0.3rem; */
+    padding-top: 0.3rem;
 }
 
 .input__button {
-    /* margin-top: 1.25rem; */
-    /* padding: 0.63rem 0.94rem; */
+    margin-top: 1.25rem;
+    padding: 0.63rem 0.94rem;
     background-color: transparent;
     border: 1px solid var(--white-color);
     color: var(--white-color);
@@ -199,7 +247,7 @@ textarea::placeholder {
 /* Footer with Backgroundcolor of var:footer */
 
 footer {
-    /* width: 100%; */
+    width: 100%;
     height: 160px;
     background-color: var(--footer-background);
 }
@@ -209,6 +257,7 @@ footer p {
     font-family: Helvetica, sans-serif;
     font-weight: 100;
     font-size: 0.88rem;
-    /* margin: 2.5rem 0 0 1.25rem; */
-    /* width: 35%; */
+    margin: 2.5rem 0 0 1.25rem;
+    width: 35%;
+}
 }

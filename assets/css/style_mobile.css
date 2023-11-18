@@ -232,8 +232,9 @@ main {
     color: var(--white-color);
     cursor: pointer;
     position: absolute;
-    right: 35%;
-    bottom: 40%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
 /* Service section (3) with background image and icons with description on top */
