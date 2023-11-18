@@ -18,8 +18,6 @@
     text-decoration: none;
 }
 
-
-
 :root {
     --white-color: white;
     --font-color-green: rgba(58, 79, 82, 1);
@@ -31,6 +29,8 @@
     --footer-background: rgba(43, 62, 81, 1);
 }
 
+/* Min-Width auf 320px festlegen */
+
 html {
     display: flex;
     align-items: center;
@@ -38,13 +38,16 @@ html {
     min-width: 320px;
 }
 
+/* Styling des Bodys mit Flex */
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 375px;
-    border: 1px solid black;
 }
+
+/* Styling Header mit Background-Image */
 
 header {
     display: flex;
@@ -120,7 +123,6 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 0 10px;
 }
 
 .portfolio {
@@ -128,6 +130,7 @@ main {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    padding: 0 10px;
     margin: 20px 0 50px 0;
 }
 
@@ -151,6 +154,7 @@ main {
     font-size: 16px;
     color: var(--button-color);
     border: 1px solid var(--button-color);
+    cursor: pointer;
 }
 
 .portfolio a {
@@ -163,13 +167,13 @@ main {
     align-items: center;
     gap: 20px;
     width: 100%;
-    padding: 0 5px;
+    padding: 0 15px;
     margin-bottom: 100px;
 }
 
 .picture__section div {
     background-color: var(--image-color);
-    height: 203px;
+    height: 205.5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,7 +198,7 @@ main {
     background-image: url('../img/8d72e0af708f1d83a868ba81ee657811.png');
 }
 
-.services, .free__qoute {
+.services, .free__qoute, .contact {
     display: flex;
     align-items: center;
     background-size: cover;
@@ -205,7 +209,7 @@ main {
     flex-shrink: 0;
 }
 
-.services__background, .free__qoute__background {
+.services__background, .free__qoute__background, form  {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -234,7 +238,7 @@ main {
     margin-bottom: 30px;
 }
 
-.services__headline h2 {
+.services__headline h2, .contact h2 {
     font-family: 'Alegreya-Sans-Medium';
     font-size: 36px;
     font-weight: 300;
@@ -252,7 +256,7 @@ main {
     margin-bottom: 5px;
 }
 
-.services__content p {
+.services__content p, .contact p {
     font-family: Helvetica, sans-serif;
     font-size: 12px;
     line-height: 15px;
@@ -262,7 +266,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 5px;
+    padding: 0 15px;
     margin-bottom: 100px;
 }
 
@@ -322,4 +326,83 @@ main {
     color: var(--white-color);
     cursor: pointer;
     font-size: 20px;
+}
+
+.testimonials {
+    margin-bottom: 100px;
+}
+
+/* Contact Form */
+
+form {
+    padding-bottom: 40px;
+}
+
+.contact {
+    background-image: url('../img/contact.png');
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.contact h2, .contact p {
+    color: var(--white-color);
+}
+
+.contact__name__mail, .contact__text {
+    width: 345px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    border-radius: 5px;
+}
+
+.contact__name__mail {
+    height: 34px;
+}
+
+.contact__text {
+    height: 54px;
+}
+
+::placeholder {
+    color: var(--white-color);
+    padding-left: 10px;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+textarea::placeholder {
+    padding-top: 5px;
+}
+
+.input__button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/* Footer with Backgroundcolor of var:footer */
+
+footer {
+    width: 100%;
+    height: 160px;
+    background-color: var(--footer-background);
+}
+
+footer p {
+    color: var(--white-color);
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    margin: 40px 0 0 20px;
+    width: 150px;
 }
