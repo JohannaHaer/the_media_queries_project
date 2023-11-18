@@ -7,8 +7,8 @@
     <title> Projekt 3 Media Queries 17.11.23 </title>
 </head>
 <body>
-    <header>
-        <div class="headline">
+    <header class="general__styling__bg__img">
+        <div class="header">
             <p class="logo">New Interior.</p>
             <div class="burger__wrapper">
                 <div class="burger"></div>
@@ -55,8 +55,8 @@
                 <a href="#"><button>Lorem Rocks</button></a>
             </div>
         </section>
-        <section class="services">
-            <div class="services__background">
+        <section class="general__styling__bg__img services">
+            <div class="black__transparent__bg services__background">
                 <div class="services__headline">
                     <h2>Our Services</h2>
                     <p>A little about what we do</p>
@@ -81,7 +81,7 @@
         <section class="portfolio">
             <div>
                 <h2>From the Blog</h2>
-                <p>Keep up with the latest happenings.</p>
+                <p class="paragraph__grey">Keep up with the latest happenings.</p>
             </div>
             <a href="#"><button>View All</button></a>
         </section>
@@ -90,40 +90,60 @@
                 <img src="./assets/img/exaples_1.png" alt="lightblue chair with a lamp on the left sight infront of a grey wall">
                 <h2>Design Your Mind</h2>
                 <p class="date">3 Nov, 2014</p>
-                <p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
+                <p class="paragraph__grey">In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
                 <a href="#">Read More</a>
             </article>
             <article>
                 <img src="./assets/img/examples_2.png" alt="a green-grey couch infront of a beige wall besides standing small tables with two hanging lamps above">
                 <h2>Winter Is Comming</h2>
                 <p class="date">3 Nov, 2014</p>
-                <p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
+                <p class="paragraph__grey">In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
                 <a href="#">Read More</a>
             </article>
             <article>
                 <img src="./assets/img/examples_3.png" alt="a white cupboard with many diffrent pictures above">
                 <h2>The Illustration</h2>
                 <p class="date">3 Nov, 2014</p>
-                <p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
+                <p class="paragraph__grey">In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
                 <a href="#">Read More</a>
             </article>
         </section>
-        <section class="free__qoute">
-            <div class="free__qoute__background">
+        <section class="general__styling__bg__img free__qoute">
+            <div class="black__transparent__bg free__qoute__bg">
                 <p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit.</p>
                 <a href="#"><button>Get a free quote</button></a>
             </div>
         </section>
         <section class="testimonials">
+            <h2>Testimonials</h2>
+            <p class="paragraph__grey">Some happy customers hav to say.</p>
+            <div class="testimonials__comments">
+                <img src="./assets/img/first-testimonial.png" alt="picture of the first testimonial Jhon Doe">
+                <p class="paragraph__grey">In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
+                <p class="paragraph__grey bold">Jhon Doe</p>
+                <p class="paragraph__grey">Head of Ideas, Technext</p>
+            </div>
+            <div class="testimonials__comments">
+                <img src="./assets/img/secon-testimonial.png" alt="picture of the second testimonial Jane Doe">
+                <p class="paragraph__grey">In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
+                <p class="paragraph__grey bold">Jane Doe</p>
+                <p class="paragraph__grey">CEO, Apple Inc</p>
+            </div>
+            <div class="testimonials__comments">
+                <img src="./assets/img/third-testimonial.png" alt="picture of the third testimonial Albert Doe">
+                <p class="paragraph__grey">In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
+                <p class="paragraph__grey bold">Albert Doe</p>
+                <p class="paragraph__grey">Team Lead, Design Studio</p>
+            </div>
         </section>
-        <section class="contact">
-            <form action="">
+        <section class="general__styling__bg__img contact">
+            <form class="black__transparent__bg" action="">
                 <h2>Contact Us</h2>
                 <p>Feel free to drop us a line.</p>
                 <input class="contact__name__mail" type="text" name="name" id="name" placeholder="Your Name" required>
                 <input class="contact__name__mail" type="email" name="email" id="email" placeholder="Enter email" required>
                 <textarea class="contact__text" name="" id="" cols="30" rows="3" placeholder="Write something"></textarea>
-                <input class="input__button" type="button" value="Say Hello">
+                <input class="input__button" type="submit" value="Say Hello">
             </form>
         </section>
     </main>
