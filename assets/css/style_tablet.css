@@ -1,7 +1,15 @@
 @media only screen and (min-width: 768px) {
 
+/* Bigger Font-Size */
+
 html {
     font-size: 18px;
+}
+
+/* Header Hight adapted to Backgroundimage  */
+
+header {
+    height: 447px;
 }
 
     /* Section 2 with 6 images, each with a button in the center of the image  */
@@ -9,11 +17,12 @@ html {
 .picture__section {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: space-between;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
+    width: 100%; 
     margin-bottom: 6.25rem;
+    height: auto;
 }
 
 .picture__section div {
@@ -21,14 +30,8 @@ html {
     width: 30%;
 }
 
-.picture__section img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
 .picture__section button {
-    visibility: hidden;
+    opacity: 0;
 }
 
 /* Section 5: examples with flex. Examples consisting of an image, h2, date, description and a link for more information */

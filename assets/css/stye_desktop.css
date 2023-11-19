@@ -1,4 +1,66 @@
 @media only screen and (min-width: 992px) {
 
+    header {
+        height: 712px;
+    }
     
+    .logo:hover {
+        text-decoration: underline;
+    }
+
+    .burger__wrapper:hover {
+        cursor: pointer;
+    }
+
+    .picture__section {
+        gap: 2.5rem;
+    }
+
+    .portfolio a button:hover {
+        background-color: var(--button-color);
+        color: var(--white-color);
+        transition: background 0.6s ease-in;
+    }
+
+    .picture__section div {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .picture__section img {
+        max-width: 100%;
+        transition: all 0.3s;
+        display: block;
+        width: 100%;
+        height: auto;
+        transform: scale(1);
+    }
+    
+    .picture__section:hover img {
+        transform: scale(1.1);
+    }
+
+    .picture__section div:hover {
+        background-color: var(--image-color);
+        position: relative;
+        
+    }
+    
+    .picture__section img:hover {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        z-index: -1;
+        
+    }
+    
+    .picture__section:hover button {
+        opacity: 1;
+    }
+
+    .picture__section button:hover {
+        background-color: var(--white-color);
+        color: var(--font-color-gray);
+    }
+
 }
