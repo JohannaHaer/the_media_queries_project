@@ -12,6 +12,10 @@ header {
     height: 447px;
 }
 
+.services, .free__qoute, .contact {
+    background-attachment: fixed;
+}
+
     /* Section 2 with 6 images, each with a button in the center of the image  */
 
 .picture__section {
