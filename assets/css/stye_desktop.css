@@ -1,22 +1,32 @@
 @media only screen and (min-width: 992px) {
 
+    /* Header Hight adapted to Backgroundimage  */
+
     header {
         height: 712px;
     }
     
+    /* Hover effect underline on logo */
+
     .logo:hover {
         text-decoration: underline;
     }
 
+    /* Pointer on burger menu */
+
     .burger__wrapper:hover {
         cursor: pointer;
     }
+
+    /* Hover effect background change on butto in the portfolio sections (1 and 4) */
 
     .portfolio a button:hover {
         background-color: var(--button-color);
         color: var(--white-color);
         transition: background 0.6s ease-in;
     }
+
+    /* Section 2 with hover effects on all 6 images. Button appears on hover */
 
     .picture__section {
         gap: 2.5rem;
@@ -63,7 +73,7 @@
         color: var(--font-color-gray);
     }
 
-    /* Black transparent background on section (services, free__quote and contact) */
+    /* Black transparent background with width 80% on sections (services, free__quote and contact), alignment also on contact section 8 */
 
     .services, .contact {
         align-items: center;
@@ -84,16 +94,7 @@
         width: 100%;
     }
 
-    .examples article a:hover {
-        text-decoration: underline;
-    }
-
-    .testimonials__personal {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 100%;
-    }
+    /* Section 6 with centered content and a hover effect on button (same hover effect on button in section 8 - contact */
 
     .free__qoute {
         justify-content: center;
@@ -104,6 +105,19 @@
         color: var(--font-color-gray);
         opacity: 0.8;
         transition-delay: 0.1s;
+    }
+
+    /* Section 7 with testimonials centered in a row */
+
+    .examples article a:hover {
+        text-decoration: underline;
+    }
+
+    .testimonials__personal {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
     }
 
 }
