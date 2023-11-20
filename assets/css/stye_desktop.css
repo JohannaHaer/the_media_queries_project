@@ -1,11 +1,5 @@
 @media only screen and (min-width: 992px) {
 
-    /* Header Hight adapted to Backgroundimage  */
-
-    header {
-        height: 712px;
-    }
-    
     /* Hover effect underline on logo */
 
     .logo:hover {
@@ -103,6 +97,10 @@
         color: var(--font-color-gray);
         opacity: 0.8;
         transition-delay: 0.1s;
+    }
+
+    .contact__name__mail, .contact__text {
+        width: 45%;
     }
 
     /* Section 7 with testimonials centered in a row */
