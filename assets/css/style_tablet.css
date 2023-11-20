@@ -9,6 +9,11 @@ html {
     background-attachment: fixed;
 }
 
+.services__content img {
+    width: 50px;
+    height: 50px;
+}
+
     /* Section 2 with 6 images, each with a button in the center of the image  */
 
 .picture__section {

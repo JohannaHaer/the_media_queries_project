@@ -27,6 +27,16 @@
     --image-color-black: rgba(0, 0, 0, 0.2);
     --small-button-color: rgba(77, 167, 202, 1);
     --footer-background: rgba(43, 62, 81, 1);
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 2.25rem;
+    --font-size-h3: 2rem;
+    --font-size-p-header: 1rem;
+    --font-size-p: 0.875rem;
+    --font-size-button: 0.875rem;
+    --font-size-p-quote: 2.25rem;
+    --font-size-button-quote: 1rem;
+    --font-size-form: 0.875rem;
+    --font-family-p: Helvetica, sans-serif;
 }
 
 html {
@@ -61,9 +71,9 @@ body {
 /* Paragraphs with grey color */
 
 .paragraph__grey {
-    font-family: Helvetica, sans-serif;
-    font-size: 0.8rem;
-    line-height: 1rem;
+    font-size: var(--font-size-p);
+    font-family: var(--font-family-p);
+    line-height: 1.5rem;
     color: var(--font-color-gray);
     margin-bottom: 1.25rem;
 }
@@ -98,11 +108,12 @@ header {
 /* Styling of logo */
 
 .logo {
-    font-size: 1.88rem;
+    font-size: 2.25rem;
     text-transform: uppercase;
     color: var(--white-color);
-    font-family: 'Alegreya-Bold';
-    font-weight: bolder;
+    font-family: 'Alegreya-Regular';
+    font-style: normal;
+    font-weight: 500;
 }
 
 /* Styling of burger-menu */
@@ -134,13 +145,13 @@ header {
 
 .landing-page h1 {
     font-family: 'Nixie-Regular';
-    font-size: 2.44rem;
+    font-size: var(--font-size-h1);
     font-weight: 400;
 }
 
 .landing-page p {
     font-family: 'Alegreya-Regular';
-    font-size: 1rem;
+    font-size: var(--font-size-p-header);
     font-weight: 400;
 }
 
@@ -175,14 +186,15 @@ main {
 .portfolio div h2 {
     font-family: 'Alegreya-Sans-Medium';
     color: var(--font-color-green);
-    font-size: 1.9rem;
+    font-size: var(--font-size-h2);
     font-weight: 100;
     margin-bottom: 1.25rem;
 }
 
 .portfolio div p {
-    font-size: 1rem;
+    font-size: var(--font-size-p);
     color: var(--font-color-gray);
+    font-family: var(--font-family-p);
 }
 
 .portfolio a button {
@@ -243,7 +255,7 @@ main {
 .services {
     width: 100%;
     background-image: url('../img/8d72e0af708f1d83a868ba81ee657811.png');
-    height: 100svh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -262,16 +274,21 @@ main {
     margin-bottom: 1.88rem;
 }
 
-.services__background div img {
-    width: 50px;
-    height: 50px;
+.services__headline p {
+    font-size: var(--font-size-p);
+    font-family: var(--font-family-p);
 }
 
 .services__headline h2, .contact h2 {
     font-family: 'Alegreya-Sans-Medium';
-    font-size: 2.25rem;
+    font-size: var(--font-size-h2);
     font-weight: 300;
     margin-bottom: 0.25rem;
+}
+
+.services__content img {
+    width: 40px;
+    height: 40px;
 }
 
 .services__content {
@@ -280,15 +297,15 @@ main {
 
 .services__content h3 {
     font-family: 'Alegreya-Sans-Medium';
-    font-size: 1.88rem;
+    font-size: var(--font-size-h3);
     font-weight: 300;
     margin-bottom: 0.3rem;
 }
 
 .services__content p, .contact p {
-    font-family: Helvetica, sans-serif;
-    font-size: 0.75rem;
-    line-height: 0.94rem;
+    font-size: var(--font-size-p);
+    font-family: var(--font-family-p);
+    line-height: 1.5rem;
 }
 
 /* Section 5: examples with flex. Examples consisting of an image, h2, date, description and a link for more information */
@@ -309,9 +326,9 @@ main {
     margin-top: 3.13rem;
 }
 
-.examples h2 {
+.examples h3 {
     font-family: 'Alegreya-Sans-Medium';
-    font-size: 1.88rem;
+    font-size: var(--font-size-h3);
     color: var(--font-color-green);
     font-weight: 100;
     margin: 1.25rem 0;
@@ -375,7 +392,7 @@ main {
 .testimonials h2 {
     margin-bottom: -1.25rem;
     font-family: 'Alegreya-Sans-Medium';
-    font-size: 2.25rem;
+    font-size: var(--font-size-h2);
     color: var(--font-color-green);
 }
 
@@ -426,7 +443,7 @@ form {
 }
 
 .contact__name__mail, .contact__text {
-    width: 80%;
+    width: 97%;
     margin-top: 1.25rem;
     background-color: transparent;
     border: 1px solid var(--white-color);
