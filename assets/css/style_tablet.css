@@ -5,6 +5,9 @@
 html {
     font-size: 18px;
 }
+
+/* Background-images attached to the background. Height set to 80vh. */
+
 .services, .free__qoute, .contact {
     background-attachment: fixed;
     height: 80vh;
