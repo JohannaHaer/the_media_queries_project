@@ -36,7 +36,9 @@
     --font-size-p-quote: 2.25rem;
     --font-size-button-quote: 1rem;
     --font-size-form: 0.875rem;
+    --line-hight-p: 1.5rem;
     --font-family-p: Helvetica, sans-serif;
+    --font-family-h2: 'Alegreya-Sans-Medium';
 }
 
 html {
@@ -68,14 +70,21 @@ body {
     text-align: center;
 } 
 
-/* Paragraphs with grey color */
+/* All paragraphs with grey color */
 
 .paragraph__grey {
     font-size: var(--font-size-p);
     font-family: var(--font-family-p);
-    line-height: 1.5rem;
+    line-height: var(--line-hight-p);
     color: var(--font-color-gray);
     margin-bottom: 1.25rem;
+}
+
+/* All paragraphs with white color */
+
+.paragraph__white {
+    font-size: var(--font-size-p);
+    font-family: var(--font-family-p);
 }
 
 /* Styling Header with background image */
@@ -184,7 +193,7 @@ main {
 }
 
 .portfolio div h2 {
-    font-family: 'Alegreya-Sans-Medium';
+    font-family: var(--font-family-h2);
     color: var(--font-color-green);
     font-size: var(--font-size-h2);
     font-weight: 100;
@@ -274,13 +283,8 @@ main {
     margin-bottom: 1.88rem;
 }
 
-.services__headline p {
-    font-size: var(--font-size-p);
-    font-family: var(--font-family-p);
-}
-
 .services__headline h2, .contact h2 {
-    font-family: 'Alegreya-Sans-Medium';
+    font-family: var(--font-family-h2);
     font-size: var(--font-size-h2);
     font-weight: 300;
     margin-bottom: 0.25rem;
@@ -296,7 +300,7 @@ main {
 }
 
 .services__content h3 {
-    font-family: 'Alegreya-Sans-Medium';
+    font-family: var(--font-family-h3);
     font-size: var(--font-size-h3);
     font-weight: 300;
     margin-bottom: 0.3rem;
@@ -315,7 +319,6 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 0 0.94rem;
     margin-bottom: 6.25rem;
 }
 
@@ -327,7 +330,7 @@ main {
 }
 
 .examples h3 {
-    font-family: 'Alegreya-Sans-Medium';
+    font-family: var(--font-family-h3);
     font-size: var(--font-size-h3);
     color: var(--font-color-green);
     font-weight: 100;
@@ -391,7 +394,7 @@ main {
 
 .testimonials h2 {
     margin-bottom: -1.25rem;
-    font-family: 'Alegreya-Sans-Medium';
+    font-family: var(--font-family-h2);
     font-size: var(--font-size-h2);
     color: var(--font-color-green);
 }
@@ -491,7 +494,7 @@ footer {
 
 footer p {
     color: var(--white-color);
-    font-family: Helvetica, sans-serif;
+    font-family: var(--font-family-p);
     font-weight: 100;
     font-size: 0.88rem;
     margin: 2.5rem 0 0 1.25rem;
