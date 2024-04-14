@@ -7,3 +7,4 @@ Mithilfe von Media Queries nach dem Mobile First Ansatz, kann die Website auf Sm
 - [@JohannaHaer](https://github.com/JohannaHaer)
 
 # Screenshots
+![Mockup Website Landingpage](./assets/img/1.png)
