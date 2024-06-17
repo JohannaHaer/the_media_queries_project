@@ -3,6 +3,9 @@ In diesem Projekt wird eine Frontend Website für eine Innenarchitektur-Agentur 
 
 Mithilfe von Media Queries nach dem Mobile First Ansatz, kann die Website auf Smartphones, Tablets sowie Desktops dargestellt werden.
 
+# Demo
+https://the-media-queries-project.netlify.app/
+
 # Authors
 - [@JohannaHaer](https://github.com/JohannaHaer)
 
